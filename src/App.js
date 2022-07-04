@@ -1,7 +1,7 @@
 import './App.css';
 import Navbar from './components/Navbar'
 import Textform from './components/Textform';
-// import About from './components/About';
+import About from './components/About';
 import { useState } from 'react';
 import Alert from './components/Alert';
 import { Routes, Route} from "react-router-dom";
@@ -38,10 +38,10 @@ function App() {
     <Routes>
       <Route exact path="/" element={
         <div className="container my-3">
-        <Textform heading="Analyze the text" mode={mode} showAlert={showAlert}/>
+        <Textform heading="Analyze the text- Word Counter,Character Counter , Uppercase to Lowercase , LowerCase to Uppercase , Text-to-Speech " mode={mode} showAlert={showAlert}/>
       </div>
       }/>
-      {/* <Route exact path="/about" element={<About/>}/> */}
+      <Route exact path="/about" element={<About mode={mode}/>}/>
     </Routes>
    </>
   );
