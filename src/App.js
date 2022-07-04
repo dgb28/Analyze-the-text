@@ -36,7 +36,7 @@ function App() {
     <Navbar title="Amazing" aboutText="About Us" mode={mode} themeButton={themeButton}/>
     <Alert alert={alert}/>
     <Routes>
-      <Route exact path="/" element={
+      <Route exact path="/Analyze-the-text" element={
         <div className="container my-3">
         <Textform heading="Analyze the text- Word Counter,Character Counter , Uppercase to Lowercase , LowerCase to Uppercase , Text-to-Speech " mode={mode} showAlert={showAlert}/>
       </div>
